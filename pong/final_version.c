@@ -86,8 +86,7 @@ int main() {
     while (p1.score < MAX_SCORE && p2.score < MAX_SCORE) {
         draw(p1, p2, ball);
         printf("Press A/Z for Player 1, K/M for Player 2, Space to step: ");
-        command = getchar();
-        getchar(); // игнорируем ввод новой строки
+        command = getchar();  // игнорируем ввод новой строки
 
         switch (command) {
             case 'A':
